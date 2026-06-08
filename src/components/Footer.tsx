@@ -4,7 +4,7 @@ export default function Footer() {
       id="contact"
       className="relative overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/images/footer.png')",
+        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/images/footer.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center top",
         // backgroundColor: "#0a0e14",

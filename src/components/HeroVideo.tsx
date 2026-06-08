@@ -101,7 +101,7 @@ export default function HeroVideo() {
       <video
         className="absolute inset-0 w-full h-full object-cover opacity-55"
         autoPlay muted loop playsInline
-        src="/assets/videos/SPACEPLUS%20PRESENT%20ATLANTIS.mp4"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/videos/SPACEPLUS%20PRESENT%20ATLANTIS.mp4`}
       />
 
       {/* Gradient overlay */}
