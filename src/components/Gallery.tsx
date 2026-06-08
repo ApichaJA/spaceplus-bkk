@@ -6,14 +6,16 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrambleText from "./ScrambleText";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const PHOTOS = [
-  { src: "/assets/gallery/G-1.jpeg", alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-2.jpeg", alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-3.jpg",  alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-4.jpg",  alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-5.jpg",  alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-6.jpeg", alt: "SpacePlus night" },
-  { src: "/assets/gallery/G-7.jpeg", alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-1.jpeg`, alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-2.jpeg`, alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-3.jpg`,  alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-4.jpg`,  alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-5.jpg`,  alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-6.jpeg`, alt: "SpacePlus night" },
+  { src: `${B}/assets/gallery/G-7.jpeg`, alt: "SpacePlus night" },
 ];
 
 export default function Gallery() {

@@ -6,9 +6,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrambleText from "./ScrambleText";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const PANELS = [
   {
-    image:   "/assets/images/Local_ACT.jpg",
+    image:   `${B}/assets/images/Local_ACT.jpg`,
     eyebrow: "EVERY NIGHT IS A SPECIAL NIGHT",
     title:   "OUR RESIDENTS",
     cta:     "SEE OUR LOCAL ACTS",
@@ -16,7 +18,7 @@ const PANELS = [
     delay:   0,
   },
   {
-    image:   "/assets/images/International_ACT.jpg",
+    image:   `${B}/assets/images/International_ACT.jpg`,
     eyebrow: "LETS MAKE HISTORY",
     title:   "OUR INTERNATIONALS",
     cta:     "SEE OUR INTERNATIONAL ACTS",
